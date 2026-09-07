@@ -1,0 +1,35 @@
+name: "🔧 Solicitar un ajuste"
+description: "Propón un cambio sobre una función existente."
+title: "[🔧 Ajuste]: "
+body:
+  - type: input
+    id: area
+    attributes:
+      label: "📍 Área o módulo"
+      placeholder: "Ejemplo: mapa, ficha predial o API"
+    validations:
+      required: true
+
+  - type: textarea
+    id: situacion_actual
+    attributes:
+      label: "📌 Situación actual"
+      placeholder: "Describe cómo funciona actualmente."
+    validations:
+      required: true
+
+  - type: textarea
+    id: ajuste
+    attributes:
+      label: "🔧 Ajuste solicitado"
+      placeholder: "Describe el cambio que se necesita."
+    validations:
+      required: true
+
+  - type: textarea
+    id: resultado
+    attributes:
+      label: "✅ Resultado esperado"
+      placeholder: "Explica cómo debería funcionar después del ajuste."
+    validations:
+      required: true
