@@ -1,0 +1,33 @@
+name: "📝 Nueva tarea"
+description: "Registra una tarea nueva para el proyecto."
+title: "[📝 Tarea]: "
+body:
+  - type: input
+    id: area
+    attributes:
+      label: "📍 Área o módulo"
+      placeholder: "Ejemplo: mapa, ficha predial o API"
+    validations:
+      required: true
+
+  - type: textarea
+    id: descripcion
+    attributes:
+      label: "📋 Descripción de la tarea"
+      placeholder: "Describe qué se necesita realizar."
+    validations:
+      required: true
+
+  - type: textarea
+    id: resultado
+    attributes:
+      label: "✅ Resultado esperado"
+      placeholder: "Indica cómo debe quedar la tarea al finalizar."
+    validations:
+      required: true
+
+  - type: textarea
+    id: informacion_adicional
+    attributes:
+      label: "🔗 Información adicional"
+      placeholder: "Agrega referencias o detalles relevantes, si aplica."
