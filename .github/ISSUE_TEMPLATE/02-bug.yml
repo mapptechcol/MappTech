@@ -1,0 +1,44 @@
+name: "🐛 Reportar un bug"
+description: "Informa un error o comportamiento inesperado."
+title: "[🐛 Bug]: "
+body:
+  - type: input
+    id: area
+    attributes:
+      label: "📍 Área o módulo"
+      placeholder: "Ejemplo: mapa, ficha predial o API"
+    validations:
+      required: true
+
+  - type: textarea
+    id: descripcion
+    attributes:
+      label: "🐞 Descripción del problema"
+      placeholder: "Explica qué ocurrió."
+    validations:
+      required: true
+
+  - type: textarea
+    id: pasos
+    attributes:
+      label: "🔁 Pasos para reproducir"
+      placeholder: |
+        1. Ir a...
+        2. Seleccionar...
+        3. Observar...
+    validations:
+      required: true
+
+  - type: textarea
+    id: resultado
+    attributes:
+      label: "✅ Resultado esperado"
+      placeholder: "Explica qué debería ocurrir."
+    validations:
+      required: true
+
+  - type: upload
+    id: evidencia
+    attributes:
+      label: "📎 Evidencia"
+      description: "Adjunta capturas o archivos, si aplica. No incluyas información sensible."
