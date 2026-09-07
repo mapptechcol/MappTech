@@ -10,6 +10,18 @@ body:
     validations:
       required: true
 
+  - type: dropdown
+    id: proyecto
+    attributes:
+      label: "📦 Proyecto"
+      description: "Selecciona el proyecto relacionado con esta incidencia."
+      options:
+        - MappStock
+        - MappTax
+        - MappView
+    validations:
+      required: true
+
   - type: textarea
     id: situacion_actual
     attributes:
